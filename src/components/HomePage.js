@@ -44,13 +44,6 @@ const HomePage = () => {
             </a>
           </div>
         </div>
-
-        <div className='together'>
-          <h2 className='title title--md'> Interested in doing a project together?</h2>
-          <a href='#' className='btn btn--alt'>
-            Contact Me
-          </a>
-        </div>
       </section>
     </div>
   )
