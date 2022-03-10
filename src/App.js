@@ -10,7 +10,6 @@ import './App.css'
 function App() {
   return (
     <div className='App'>
-      <h1>Minimalist Portfolio!</h1>
       <Header />
 
       <Outlet />
