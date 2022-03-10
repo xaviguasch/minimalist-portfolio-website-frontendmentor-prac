@@ -2,14 +2,20 @@ import React, { useState } from 'react'
 
 import { Outlet } from 'react-router-dom'
 
+import Header from './components/Header'
+import Footer from './components/Footer'
+
 import './App.css'
 
 function App() {
   return (
     <div className='App'>
       <h1>Minimalist Portfolio!</h1>
+      <Header />
 
       <Outlet />
+
+      <Footer />
     </div>
   )
 }
