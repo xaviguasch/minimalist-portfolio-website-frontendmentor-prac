@@ -1,0 +1,19 @@
+.btn-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.svg-container {
+  padding: 16px;
+  background: var(--clr-darker-blue-bg);
+}
+
+.btn:hover .svg-container,
+.btn:focus .svg-container {
+  background: var(--clr-dark-cyan-bg);
+}
+
+.btn-container span {
+  padding: 16px 40px;
+}

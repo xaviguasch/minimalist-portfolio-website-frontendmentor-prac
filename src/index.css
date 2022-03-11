@@ -56,6 +56,10 @@
 
   /* Background  */
   --clr-very-light-grey-bg: hsla(0, 0%, 98%, 1);
+  --clr-dark-blue-bg: hsla(205, 41%, 21%, 1);
+  --clr-darker-blue-bg: hsl(205, 38%, 17%);
+  --clr-cyan-bg: hsla(168, 36%, 54%, 1);
+  --clr-dark-cyan-bg: hsl(167, 34%, 45%);
 
   /* Others */
 }
@@ -68,7 +72,7 @@ body {
   font-size: var(--fs-16);
   font-weight: var(--fw-regular);
   line-height: 1.875;
-  text-align: center;
+  text-align: left;
 }
 
 img {
@@ -83,3 +87,58 @@ ul {
 /* ================== */
 /* Typography */
 /* ================== */
+
+.title {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bold);
+  line-height: 1.05;
+  letter-spacing: -0.36px;
+}
+
+.title--lg,
+.title--md {
+  font-size: var(--fs-40);
+}
+
+.text {
+}
+
+/* ======================== */
+/* Links, buttons & inputs  */
+/* ======================== */
+
+.btn {
+  display: inline-block;
+  font-size: var(--fs-12);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: var(--clr-white-text);
+  background: var(--clr-dark-blue-bg);
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background: var(--clr-cyan-bg);
+}
+
+.btn--alt {
+  background: transparent;
+  color: var(--clr-grayish-dark-text);
+  border: 1px solid;
+  padding: 12px 32px;
+}
+
+.btn--alt:hover,
+.btn--alt:focus {
+  color: var(--clr-white-text);
+  background: var(--clr-grayish-dark-text);
+}
+
+/* ================== */
+/* Utility styles */
+/* ================== */
+.wrapper {
+  padding: 32px 32px 80px;
+}

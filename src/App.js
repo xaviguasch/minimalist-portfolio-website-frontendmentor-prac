@@ -11,11 +11,11 @@ import './App.css'
 function App() {
   return (
     <div className='App'>
-      <Header />
-
-      <Outlet />
-
-      <Together />
+      <div className='wrapper'>
+        <Header />
+        <Outlet />
+        <Together />
+      </div>
       <Footer />
     </div>
   )
