@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Outlet } from 'react-router-dom'
 
 import './PortfolioPage.css'
 
@@ -18,6 +19,10 @@ const PortfolioPage = () => {
           <h1>Detail</h1>
         </div>
       )}
+
+      <Outlet />
+
+      <p>still PortfolioPage</p>
     </div>
   )
 }

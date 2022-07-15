@@ -1,0 +1,7 @@
+.Pair {
+}
+
+.pair__copy {
+  border-top: 1px solid var(--clr-grayish-dark-diluted-text);
+  border-bottom: 1px solid var(--clr-grayish-dark-diluted-text);
+}
