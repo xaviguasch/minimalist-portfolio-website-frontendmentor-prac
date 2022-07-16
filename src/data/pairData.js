@@ -1,4 +1,4 @@
-const pairTexts = [
+const pairData = [
   {
     id: 'cjl1',
     position: 'General Manager',
@@ -31,4 +31,4 @@ const pairTexts = [
   },
 ]
 
-export default pairTexts
+export default pairData
