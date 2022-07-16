@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom'
 const PortfolioContainer = () => {
   return (
     <div>
-      <p>PortfolioContainer</p>
+      <h2>PortfolioContainer</h2>
 
       <Outlet />
     </div>

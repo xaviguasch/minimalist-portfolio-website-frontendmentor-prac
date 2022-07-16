@@ -3,26 +3,32 @@ import { Outlet } from 'react-router-dom'
 
 import './PortfolioPage.css'
 
+// Imported images and data
+import projectsData from '../data/projectsData'
+
 const PortfolioPage = () => {
-  const [showDetail, setShowDetail] = useState(false)
+  const [showPortfolioDetail, setShowPortfolioDetail] = useState(false)
 
   return (
     <div className='PortfolioPage'>
-      {!showDetail && (
+      {!showPortfolioDetail && (
         <div className='PortfolioPage--main'>
           <h1>PortfolioPage</h1>
-        </div>
-      )}
 
-      {showDetail && (
-        <div className='PortfolioPage--detail'>
-          <h1>Detail</h1>
+          {projectsData.map((pd) => {
+            return (
+              <div key={pd.name}>
+                <img src={pd.images.mobile.portfolio} alt={`${pd.name}`} />
+                <h2>{pd.name}</h2>
+                <p>{pd.description}</p>
+                <a href=''>view project</a>
+              </div>
+            )
+          })}
         </div>
       )}
 
       <Outlet />
-
-      <p>still PortfolioPage</p>
     </div>
   )
 }

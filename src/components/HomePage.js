@@ -1,12 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Pair from './Pair'
 
 import './HomePage.css'
 
-// Imported images
-import HeroMobileImg from '../assets/homepage/mobile/image-homepage-hero@2x.jpg'
-import ProfileMobileImg from '../assets/homepage/mobile/image-homepage-profile@2x.jpg'
+// Imported images and data
+import HeroMobileImg from '../assets/images/homepage/mobile/image-homepage-hero@2x.jpg'
+import ProfileMobileImg from '../assets/images/homepage/mobile/image-homepage-profile@2x.jpg'
 import aboutMeData from '../data/aboutMeData'
 
 // Imported svgs
