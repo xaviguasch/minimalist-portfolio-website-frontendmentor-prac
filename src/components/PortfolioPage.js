@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 import './PortfolioPage.css'
 
@@ -21,7 +21,7 @@ const PortfolioPage = () => {
                 <img src={pd.images.mobile.portfolio} alt={`${pd.name}`} />
                 <h2>{pd.name}</h2>
                 <p>{pd.description}</p>
-                <a href=''>view project</a>
+                <Link to={`/portfolio/${pd.name}`}>view project</Link>
               </div>
             )
           })}
