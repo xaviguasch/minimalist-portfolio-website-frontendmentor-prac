@@ -1,14 +1,16 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+
 import './Together.css'
 
 const Together = () => {
   return (
     <div className='Together'>
       <h2 className='title title--md'> Interested in doing a project together?</h2>
-      <a href='#' className='btn btn--alt'>
+      <Link to='/contact' className='btn btn--alt'>
         Contact Me
-      </a>
+      </Link>
     </div>
   )
 }

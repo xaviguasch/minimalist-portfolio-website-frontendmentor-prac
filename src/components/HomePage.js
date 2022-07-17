@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import Pair from './Pair'
+import Together from './Together'
 
 import './HomePage.css'
 
@@ -44,6 +45,7 @@ const HomePage = () => {
           buttonText='Go To Portfolio'
         />
       </section>
+      <Together />
     </div>
   )
 }
