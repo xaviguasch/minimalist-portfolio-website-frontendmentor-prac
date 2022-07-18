@@ -1,20 +1,38 @@
+.HomePage {
+  margin-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
 }
 
 .hero__copy {
+  margin-top: 24px;
+}
+
+.hero__copy .btn {
+  margin-top: 32px;
 }
 
 .btn-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  height: 48px;
 }
 
 .svg-container {
-  padding: 16px;
+  height: 100%;
+  padding: 0 16px;
   background: var(--clr-darker-blue-bg);
+
+  display: flex;
+  align-items: center;
 }
 
 .btn:hover .svg-container,
@@ -23,7 +41,7 @@
 }
 
 .btn-container span {
-  padding: 16px 40px;
+  padding: 16px 36px;
 }
 
 .hero__mobile-img {

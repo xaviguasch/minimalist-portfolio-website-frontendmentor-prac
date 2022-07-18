@@ -20,7 +20,7 @@ const HomePage = () => {
       <section className='hero'>
         <div className='hero__copy'>
           <h1 className='title title--lg'>
-            Hey, I'm Xavi Guasch and I do love building beautiful websites
+            Hey, I'm Xavi Guasch and I<br /> love building beautiful websites
           </h1>
 
           <a href='#about-me' className='btn'>
@@ -32,6 +32,7 @@ const HomePage = () => {
             </div>
           </a>
         </div>
+
         <div className='hero__mobile-img'>
           <img src={HeroMobileImg} alt='computer monitor showing webiste' />
         </div>
