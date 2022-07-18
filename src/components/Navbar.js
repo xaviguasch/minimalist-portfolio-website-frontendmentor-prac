@@ -7,9 +7,9 @@ import { ReactComponent as HamburgerSVG } from '../assets/icons/hamburger.svg'
 
 import './Navbar.css'
 
-const Navbar = () => {
+const Navbar = ({ position }) => {
   return (
-    <div className='Navbar'>
+    <div className={position}>
       <div className='hamburger'>
         <HamburgerSVG />
       </div>

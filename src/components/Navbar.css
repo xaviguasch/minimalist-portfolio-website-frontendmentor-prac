@@ -1,0 +1,10 @@
+.nav_header {
+}
+
+.nav_header .navigation-menu {
+  display: none;
+}
+
+.nav_footer .hamburger {
+  display: none;
+}

@@ -15,7 +15,7 @@ const Header = () => {
       <Link to='/'>
         <Logo />
       </Link>
-      <Navbar />
+      <Navbar position='nav_header' />
     </div>
   )
 }
