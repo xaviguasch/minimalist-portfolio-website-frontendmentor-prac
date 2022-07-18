@@ -1,9 +1,6 @@
 import React from 'react'
 
-// Imported svgs
-import { ReactComponent as GithubSVG } from '../assets/icons/github.svg'
-import { ReactComponent as TwitterSVG } from '../assets/icons/twitter.svg'
-import { ReactComponent as LikendinSVG } from '../assets/icons/linkedin.svg'
+import IconGroup from './IconGroup'
 
 import './ContactPage.css'
 
@@ -48,6 +45,8 @@ const ContactPage = () => {
           </div>
           <button>Send Message</button>
         </form>
+
+        <IconGroup />
       </div>
     </div>
   )
