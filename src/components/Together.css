@@ -1,0 +1,13 @@
+.Together {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  padding-top: 20px;
+}
+
+.Together .title {
+  text-align: center;
+}
