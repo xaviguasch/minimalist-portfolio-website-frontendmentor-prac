@@ -1,0 +1,9 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header_link {
+  margin-bottom: -8px;
+}

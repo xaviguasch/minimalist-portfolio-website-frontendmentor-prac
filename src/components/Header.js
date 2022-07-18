@@ -12,7 +12,7 @@ import './Header.css'
 const Header = () => {
   return (
     <div className='Header'>
-      <Link to='/'>
+      <Link to='/' className='Header_link'>
         <Logo />
       </Link>
       <Navbar position='nav_header' />
