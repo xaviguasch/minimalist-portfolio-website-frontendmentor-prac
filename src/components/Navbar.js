@@ -15,13 +15,19 @@ const Navbar = ({ position }) => {
       </div>
       <ul className='navigation-menu'>
         <li>
-          <Link to='/'>Home</Link>
+          <Link className='link' to='/'>
+            Home
+          </Link>
         </li>
         <li>
-          <Link to='/portfolio'>Portfolio</Link>
+          <Link className='link' to='/portfolio'>
+            Portfolio
+          </Link>
         </li>
         <li>
-          <Link to='/contact'>Contact Me</Link>
+          <Link className='link' to='/contact'>
+            Contact Me
+          </Link>
         </li>
       </ul>
     </div>

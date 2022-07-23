@@ -51,15 +51,16 @@
 
   /* Text */
   --clr-grayish-dark-text: hsla(245, 10%, 22%, 1);
-  --clr-grayish-dark-diluted-text: hsla(245, 10%, 22%, 0.15);
+  --clr-grayish-dark-diluted-text: hsla(245, 11%, 22%, 0.15);
   --clr-white-text: hsla(0, 0%, 100%, 1);
   --clr-cyan-text: hsla(168, 36%, 54%, 1);
 
   /* Background  */
   --clr-very-light-grey-bg: hsla(0, 0%, 98%, 1);
 
-  --clr-dark-blue-bg: hsla(205, 41%, 21%, 1);
+  --clr-dark-blue-bg: hsl(206, 41%, 21%);
   --clr-darker-blue-bg: hsl(205, 38%, 17%);
+  --clr-grayish-dark-blue-bg: hsl(245, 11%, 22%);
   --clr-cyan-bg: hsla(168, 36%, 54%, 1);
   --clr-dark-cyan-bg: hsl(167, 34%, 45%);
 
@@ -136,6 +137,13 @@ ul {
 .btn--alt:focus {
   color: var(--clr-white-text);
   background: var(--clr-grayish-dark-text);
+}
+
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: var(--fs-12);
 }
 
 /* ================== */

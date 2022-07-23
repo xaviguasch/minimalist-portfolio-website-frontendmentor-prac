@@ -1,0 +1,16 @@
+.Footer {
+  background: var(--clr-grayish-dark-blue-bg);
+  color: var(--clr-white-text);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  padding: 56px 0;
+}
+
+.Footer_link svg {
+  color: var(--clr-white-text);
+}

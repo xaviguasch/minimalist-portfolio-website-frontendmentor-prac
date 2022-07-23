@@ -7,10 +7,10 @@ import { ReactComponent as LikendinSVG } from '../assets/icons/linkedin.svg'
 
 import './IconGroup.css'
 
-const IconGroup = () => {
+const IconGroup = ({ position }) => {
   return (
-    <div className='IconGroup'>
-      <ul>
+    <div className={position}>
+      <ul className='icon-list'>
         <li>
           <a href='#'>
             <GithubSVG />

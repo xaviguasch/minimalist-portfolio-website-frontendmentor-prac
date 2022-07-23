@@ -1,0 +1,10 @@
+.icon-group_footer svg {
+  color: var(--clr-white-text);
+}
+
+.icon-group_footer .icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}

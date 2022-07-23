@@ -8,3 +8,17 @@
 .nav_footer .hamburger {
   display: none;
 }
+
+.nav_footer .link {
+  color: var(--clr-white-text);
+}
+
+.nav_footer .navigation-menu {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
