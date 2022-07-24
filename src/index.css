@@ -109,6 +109,11 @@ ul {
   letter-spacing: -0.29px;
 }
 
+.subtitle {
+  font-size: var(--fs-16);
+  opacity: 0.5;
+}
+
 .text {
   font-size: var(--fs-15);
   line-height: 2;

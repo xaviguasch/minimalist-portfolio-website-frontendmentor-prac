@@ -49,13 +49,17 @@ const PortfolioDetail = () => {
       <div className='other-projects'>
         <Link className='other-projects__left' to={`/portfolio/${project.previous}`}>
           <ArrowLeft />
-          <h3>{project.previous}</h3>
-          <p>Previous Project</p>
+          <div className='other-projects__copy'>
+            <h3 className='title title--md'>{project.previous}</h3>
+            <p className='subtitle'>Previous Project</p>
+          </div>
         </Link>
         <Link className='other-projects__right' to={`/portfolio/${project.next}`}>
           <ArrowRight />
-          <h3>{project.next}</h3>
-          <p>Next Project</p>
+          <div className='other-projects__copy'>
+            <h3 className='title title--md'>{project.next}</h3>
+            <p className='subtitle'>Next Project</p>
+          </div>
         </Link>
       </div>
     </div>
