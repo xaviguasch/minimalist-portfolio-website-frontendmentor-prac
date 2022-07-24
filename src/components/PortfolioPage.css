@@ -1,17 +1,20 @@
 .PortfolioPage {
 }
 
-.portfolio-info {
-  border-top: 1px solid var(--clr-grayish-dark-diluted-text);
-  border-bottom: 1px solid var(--clr-grayish-dark-diluted-text);
-  margin-top: 32px;
-  margin-bottom: 72px;
-
-  padding: 24px 0;
+.previews {
+  margin-top: 40px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 24px;
+  gap: 40px;
+}
+
+.previews__images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
 }

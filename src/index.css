@@ -16,10 +16,10 @@
   --ff-main: 'Public Sans', sans-serif;
   --ff-secondary: 'Ibarra Real Nova', serif;
 
-  /* --fw-light: 300; */
+  --fw-light: 300;
   --fw-regular: 400;
-  /* --fw-medium: 500; */
-  /* --fw-semi-bold: 600; */
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
   --fw-bold: 700;
 
   --fs-07: 0.438rem;
@@ -53,7 +53,7 @@
   --clr-grayish-dark-text: hsl(245, 11%, 22%);
   --clr-grayish-dark-diluted-text: hsla(245, 11%, 22%, 0.15);
   --clr-white-text: hsla(0, 0%, 100%, 1);
-  --clr-cyan-text: hsla(168, 36%, 54%, 1);
+  --clr-cyan-text: hsl(168, 37%, 54%);
 
   /* Background  */
   --clr-very-light-grey-bg: hsla(0, 0%, 98%, 1);
@@ -98,15 +98,28 @@ ul {
   letter-spacing: -0.36px;
 }
 
-.title--lg,
-.title--md {
+.title--lg {
   font-size: var(--fs-40);
+  font-weight: var(--fw-bold);
+}
+
+.title--md {
+  font-size: var(--fs-32);
+  font-weight: var(--fw-medium);
+  letter-spacing: -0.29px;
 }
 
 .text {
   font-size: var(--fs-15);
   line-height: 2;
   opacity: 0.8;
+}
+
+.tags {
+  font-size: var(--fs-13);
+  font-weight: var(--fw-bold);
+  color: var(--clr-cyan-text);
+  line-height: 2.2;
 }
 
 /* ======================== */
@@ -154,4 +167,29 @@ ul {
 /* ================== */
 .wrapper {
   padding: 32px 32px 80px;
+}
+
+.portfolio-info {
+  border-top: 1px solid var(--clr-grayish-dark-diluted-text);
+  border-bottom: 1px solid var(--clr-grayish-dark-diluted-text);
+  margin-top: 32px;
+  margin-bottom: 72px;
+
+  padding: 24px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.portfolio-background {
+  margin-top: -24px;
+}
+
+.title-and-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }

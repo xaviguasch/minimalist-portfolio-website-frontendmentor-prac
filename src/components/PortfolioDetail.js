@@ -18,18 +18,33 @@ const PortfolioDetail = () => {
 
   return (
     <div className='PortfolioDetail'>
-      <h2>PortfolioDetail</h2>
       <img src={project.images.mobile.hero} alt='' />
-      <h2>{project.name}</h2>
-      <p>{project.description}</p>
-      <div className='tags'>Interaction Design / Front End Development</div>
-      <div className='tags'>HTML / CSS / JS</div>
-      <a href='#'>Visit Website</a>
-      <h3>Project Background</h3>
-      <p>{project.background}</p>
-      <h3>Static Previews</h3>
-      <img src={project.images.mobile.preview1} alt='' />
-      <img src={project.images.mobile.preview2} alt='' />
+
+      <div className='portfolio-info'>
+        <h2 className='title title--lg'>{project.name}</h2>
+        <p>{project.description}</p>
+        <div className='tag-area'>
+          <p className='tags'>Interaction Design / Front End Development</p>
+          <p className='tags'>HTML / CSS / JS</p>
+        </div>
+        <Link to='#' className='btn btn--alt'>
+          Visit Website
+        </Link>
+      </div>
+
+      <div className='portfolio-background'>
+        <div className='title-and-text'>
+          <h3 className='title title--md'>Project Background</h3>
+          <p className='text'>{project.background}</p>
+        </div>
+        <div className='previews'>
+          <h3 className='title title--md'>Static Previews</h3>
+          <div className='previews__images'>
+            <img src={project.images.mobile.preview1} alt='' />
+            <img src={project.images.mobile.preview2} alt='' />
+          </div>
+        </div>
+      </div>
 
       <div className='other-projects'>
         <Link className='other-projects__left' to={`/portfolio/${project.previous}`}>
