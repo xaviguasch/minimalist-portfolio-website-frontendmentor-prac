@@ -50,7 +50,7 @@
   --fs-80: 5rem;
 
   /* Text */
-  --clr-grayish-dark-text: hsla(245, 10%, 22%, 1);
+  --clr-grayish-dark-text: hsl(245, 11%, 22%);
   --clr-grayish-dark-diluted-text: hsla(245, 11%, 22%, 0.15);
   --clr-white-text: hsla(0, 0%, 100%, 1);
   --clr-cyan-text: hsla(168, 36%, 54%, 1);
@@ -104,6 +104,9 @@ ul {
 }
 
 .text {
+  font-size: var(--fs-15);
+  line-height: 2;
+  opacity: 0.8;
 }
 
 /* ======================== */

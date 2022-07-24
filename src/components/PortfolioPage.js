@@ -13,15 +13,17 @@ const PortfolioPage = () => {
     <div className='PortfolioPage'>
       {!showPortfolioDetail && (
         <div className='PortfolioPage--main'>
-          <h1>PortfolioPage</h1>
-
           {projectsData.map((pd) => {
             return (
               <div key={pd.name}>
                 <img src={pd.images.mobile.portfolio} alt={`${pd.name}`} />
-                <h2>{pd.name}</h2>
-                <p>{pd.description}</p>
-                <Link to={`/portfolio/${pd.name}`}>view project</Link>
+                <div className='portfolio-info'>
+                  <h2 className='title title--md'>{pd.name}</h2>
+                  <p className='text'>{pd.description}</p>
+                  <Link to={`/portfolio/${pd.name}`} className='btn btn--alt'>
+                    view project
+                  </Link>
+                </div>
               </div>
             )
           })}
