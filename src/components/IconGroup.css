@@ -8,3 +8,13 @@
   align-items: center;
   gap: 16px;
 }
+
+.icon-group_contact svg {
+  color: var(--clr-grayish-dark-blue-bg);
+}
+
+.icon-group_contact .icon-list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}

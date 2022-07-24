@@ -7,9 +7,9 @@ import './ContactPage.css'
 const ContactPage = () => {
   return (
     <div className='ContactPage'>
-      <div className='touch'>
-        <h2>Get In Touch</h2>
-        <p>
+      <div className='portfolio-info portfolio-info--touch'>
+        <h2 className='title title--lg'>Get In Touch</h2>
+        <p className='text'>
           I’d love to hear about what you’re working on and how I could help. I’m
           currently looking for a new role and am open to a wide range of opportunities.
           My preference would be to find a position in a company in London. But I’m also
@@ -19,8 +19,9 @@ const ContactPage = () => {
           profiles below and get in touch using the form.
         </p>
 
-        <div className='icons'></div>
+        <IconGroup position='icon-group_contact' />
       </div>
+
       <div className='contact-me'>
         <h2>Contact Me</h2>
 
@@ -45,8 +46,6 @@ const ContactPage = () => {
           </div>
           <button>Send Message</button>
         </form>
-
-        <IconGroup />
       </div>
     </div>
   )
