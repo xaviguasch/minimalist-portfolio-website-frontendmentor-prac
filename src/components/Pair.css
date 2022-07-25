@@ -4,6 +4,11 @@
   gap: 32px;
 }
 
+.pair__img--tablet,
+.pair__img--desktop {
+  display: none;
+}
+
 .pair__copy {
   border-top: 1px solid var(--clr-grayish-dark-diluted-text);
   border-bottom: 1px solid var(--clr-grayish-dark-diluted-text);
@@ -17,4 +22,31 @@
 
 .pair__copy .btn {
   margin-top: 24px;
+}
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 650px) {
+  .Pair {
+    flex-direction: row;
+    gap: 68px;
+  }
+  .pair__img-container {
+    flex: 5 1 0;
+  }
+
+  .pair__img--mobile {
+    display: none;
+  }
+
+  .pair__img--tablet {
+    display: block;
+  }
+
+  .pair__copy {
+    flex: 6 1 0;
+  }
 }

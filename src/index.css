@@ -122,6 +122,10 @@ ul {
   opacity: 0.8;
 }
 
+.text--md {
+  font-size: var(--fs-16);
+}
+
 .tags {
   font-size: var(--fs-13);
   font-weight: var(--fw-bold);

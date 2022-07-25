@@ -10,6 +10,8 @@ import './HomePage.css'
 import HeroMobileImg from '../assets/images/homepage/mobile/image-homepage-hero@2x.jpg'
 import HeroTabletImg from '../assets/images/homepage/tablet/image-homepage-hero@2x.jpg'
 import ProfileMobileImg from '../assets/images/homepage/mobile/image-homepage-profile@2x.jpg'
+import ProfileTabletImg from '../assets/images/homepage/tablet/image-homepage-profile@2x.jpg'
+import ProfileDesktopImg from '../assets/images/homepage/desktop/image-homepage-profile@2x.jpg'
 import aboutMeData from '../data/aboutMeData'
 
 // Imported svgs
@@ -44,7 +46,9 @@ const HomePage = () => {
 
       <section className='about-me' id='about-me'>
         <Pair
-          img={ProfileMobileImg}
+          imgMobile={ProfileMobileImg}
+          imgTablet={ProfileTabletImg}
+          imgDesktop={ProfileDesktopImg}
           text={aboutMeData.text}
           title={aboutMeData.title}
           buttonText='Go To Portfolio'
