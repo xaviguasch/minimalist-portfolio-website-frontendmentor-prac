@@ -54,9 +54,11 @@
   --clr-grayish-dark-diluted-text: hsla(245, 11%, 22%, 0.15);
   --clr-white-text: hsla(0, 0%, 100%, 1);
   --clr-cyan-text: hsl(168, 37%, 54%);
+  --clr-grey-text: hsl(0, 0%, 59%);
 
   /* Background  */
   --clr-very-light-grey-bg: hsla(0, 0%, 98%, 1);
+  --clr-semi-dark-grey-bg: hsl(240, 2%, 90%);
 
   --clr-dark-blue-bg: hsl(206, 41%, 21%);
   --clr-darker-blue-bg: hsl(205, 38%, 17%);
@@ -127,6 +129,12 @@ ul {
   line-height: 2.2;
 }
 
+label,
+textarea {
+  font-size: var(--fs-13);
+  font-weight: var(--fw-bold);
+}
+
 /* ======================== */
 /* Links, buttons & inputs  */
 /* ======================== */
@@ -139,12 +147,18 @@ ul {
   text-decoration: none;
   color: var(--clr-white-text);
   background: var(--clr-dark-blue-bg);
+
   cursor: pointer;
 }
 
 .btn:hover,
 .btn:focus {
   background: var(--clr-cyan-bg);
+}
+
+.btn--contact {
+  border: 1px solid;
+  padding: 15px 38px;
 }
 
 .btn--alt {

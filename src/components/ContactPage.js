@@ -23,18 +23,18 @@ const ContactPage = () => {
       </div>
 
       <div className='contact-me'>
-        <h2>Contact Me</h2>
+        <h2 className='title title--lg'>Contact Me</h2>
 
-        <form action=''>
-          <div>
+        <form className='contact-me__form' action=''>
+          <div className='input-group'>
             <label htmlFor='name'>Name</label>
             <input type='text' name='name' placeholder='Jane Appleseed' />
           </div>
-          <div>
+          <div className='input-group'>
             <label htmlFor='email'>Email Address</label>
             <input type='email' name='email' placeholder='email@example.com' />
           </div>
-          <div>
+          <div className='input-group'>
             <label htmlFor='message'>Message</label>
             <textarea
               name='message'
@@ -44,7 +44,7 @@ const ContactPage = () => {
               rows='10'
             ></textarea>
           </div>
-          <button>Send Message</button>
+          <button className='btn btn--contact'>Send Message</button>
         </form>
       </div>
     </div>

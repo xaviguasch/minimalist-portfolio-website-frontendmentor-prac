@@ -4,3 +4,43 @@
 .portfolio-info--touch {
   margin-top: 0;
 }
+
+.contact-me {
+  margin-top: -40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.contact-me__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.contact-me__form .input-group {
+  width: 100%;
+}
+
+.contact-me__form input,
+.contact-me__form textarea {
+  width: 100%;
+  border: none;
+  background: var(--clr-semi-dark-grey-bg);
+  padding: 16px;
+
+  margin-top: 8px;
+}
+
+.contact-me__form input::placeholder {
+  color: var(--clr-grey-text);
+}
+
+.contact-me__form textarea {
+  resize: none;
+}
