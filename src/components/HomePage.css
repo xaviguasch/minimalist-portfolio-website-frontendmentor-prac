@@ -45,3 +45,37 @@
 .hero__mobile-img {
   order: -1;
 }
+
+.hero__tablet-img {
+  display: none;
+}
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 650px) {
+  .hero {
+    position: relative;
+  }
+
+  .hero__mobile-img {
+    display: none;
+  }
+  .hero__tablet-img {
+    display: block;
+  }
+
+  .hero__copy {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 75%;
+    background: var(--clr-very-light-grey-bg);
+    margin-top: 0;
+
+    padding: 56px 72px 0 0;
+  }
+}

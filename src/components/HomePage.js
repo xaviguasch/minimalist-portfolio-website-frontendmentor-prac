@@ -8,6 +8,7 @@ import './HomePage.css'
 
 // Imported images and data
 import HeroMobileImg from '../assets/images/homepage/mobile/image-homepage-hero@2x.jpg'
+import HeroTabletImg from '../assets/images/homepage/tablet/image-homepage-hero@2x.jpg'
 import ProfileMobileImg from '../assets/images/homepage/mobile/image-homepage-profile@2x.jpg'
 import aboutMeData from '../data/aboutMeData'
 
@@ -20,7 +21,7 @@ const HomePage = () => {
       <section className='hero'>
         <div className='hero__copy'>
           <h1 className='title title--lg'>
-            Hey, I'm Xavi Guasch and I<br /> love building beautiful websites
+            Hey, I'm Xavi Guasch and I love building beautiful websites
           </h1>
 
           <a href='#about-me' className='btn'>
@@ -35,6 +36,9 @@ const HomePage = () => {
 
         <div className='hero__mobile-img'>
           <img src={HeroMobileImg} alt='computer monitor showing webiste' />
+        </div>
+        <div className='hero__tablet-img'>
+          <img src={HeroTabletImg} alt='computer monitor showing webiste' />
         </div>
       </section>
 

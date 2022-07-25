@@ -22,3 +22,25 @@
   align-items: center;
   gap: 18px;
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 650px) {
+  .nav_header .hamburger {
+    display: none;
+  }
+
+  .nav_header .navigation-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 42px;
+  }
+
+  .nav_header .link {
+    color: var(--clr-grayish-dark-text);
+  }
+}

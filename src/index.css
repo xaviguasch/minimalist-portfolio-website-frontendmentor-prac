@@ -186,6 +186,10 @@ textarea {
 /* ================== */
 .wrapper {
   padding: 32px 32px 80px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .portfolio-info {
@@ -211,4 +215,17 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 650px) {
+  /* UTILITY STYLES */
+  .wrapper {
+    padding: 64px 40px 96px;
+    gap: 48px;
+  }
 }
