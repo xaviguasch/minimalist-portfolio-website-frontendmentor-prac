@@ -9,3 +9,35 @@
 .Together .title {
   text-align: center;
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 650px) {
+  .Together {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+  }
+
+  .Together .title {
+    text-align: left;
+    max-width: 50%;
+  }
+
+  .Together::after {
+    content: '';
+    height: 1px;
+    width: 115px;
+
+    border: 1px solid var(--clr-grayish-dark-diluted-text);
+
+    position: absolute;
+    top: 50%;
+    left: 55%;
+  }
+}
