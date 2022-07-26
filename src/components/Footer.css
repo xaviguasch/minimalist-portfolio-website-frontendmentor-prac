@@ -14,3 +14,19 @@
 .Footer_link svg {
   color: var(--clr-white-text);
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 650px) {
+  .Footer {
+    padding: 24px 40px;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+  }
+}
