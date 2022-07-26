@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 
 import './PortfolioPage.css'
@@ -7,11 +7,9 @@ import './PortfolioPage.css'
 import projectsData from '../data/projectsData'
 
 const PortfolioPage = () => {
-  const [showPortfolioDetail, setShowPortfolioDetail] = useState(false)
-
   return (
     <div className='PortfolioPage'>
-      {!showPortfolioDetail && (
+      {
         <div className='PortfolioPage--main'>
           {projectsData.map((pd) => {
             return (
@@ -28,7 +26,7 @@ const PortfolioPage = () => {
             )
           })}
         </div>
-      )}
+      }
 
       <Outlet />
     </div>

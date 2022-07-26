@@ -52,8 +52,7 @@
     text-align: center;
 
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+
     gap: 42px;
   }
 }
