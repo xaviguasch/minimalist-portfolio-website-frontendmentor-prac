@@ -13,10 +13,26 @@ const PortfolioPage = () => {
         <div className='PortfolioPage--main'>
           {projectsData.map((pd) => {
             return (
-              <div key={pd.name}>
-                <img src={pd.images.mobile.portfolio} alt={`${pd.name}`} />
-                <div className='portfolio-info'>
-                  <h2 className='title title--md'>{pd.name}</h2>
+              <div className='portfolio' key={pd.name}>
+                <div className='portfolio__img-container'>
+                  <img
+                    className='portfolio__img--mobile'
+                    src={pd.images.mobile.portfolio}
+                    alt={`${pd.name}`}
+                  />
+                  <img
+                    className='portfolio__img--tablet'
+                    src={pd.images.tablet.portfolio}
+                    alt={`${pd.name}`}
+                  />
+                  <img
+                    className='portfolio__img--desktop'
+                    src={pd.images.desktop.portfolio}
+                    alt={`${pd.name}`}
+                  />
+                </div>
+                <div className='portfolio__info'>
+                  <h2 className='title title--lg'>{pd.name}</h2>
                   <p className='text'>{pd.description}</p>
                   <Link to={`/portfolio/${pd.name}`} className='btn btn--alt'>
                     view project

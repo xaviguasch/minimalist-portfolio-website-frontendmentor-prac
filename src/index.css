@@ -196,7 +196,7 @@ textarea {
   gap: 40px;
 }
 
-.portfolio-info {
+.portfolio__info {
   border-top: 1px solid var(--clr-grayish-dark-diluted-text);
   border-bottom: 1px solid var(--clr-grayish-dark-diluted-text);
   margin-top: 32px;
