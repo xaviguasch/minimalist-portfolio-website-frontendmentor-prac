@@ -41,3 +41,16 @@
     left: 55%;
   }
 }
+
+/* Laptop */
+@media (min-width: 1275px) {
+  .Together .title {
+    max-width: 350px;
+  }
+
+  .Together::after {
+    left: 38%;
+
+    width: 40%;
+  }
+}

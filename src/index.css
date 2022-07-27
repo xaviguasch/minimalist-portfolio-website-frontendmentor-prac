@@ -240,7 +240,7 @@ textarea {
 @media (min-width: 1275px) {
   /* UTILITY STYLES */
   .wrapper {
-    padding: 42px 110px;
+    padding: 42px 110px 100px;
     gap: 36px;
   }
 

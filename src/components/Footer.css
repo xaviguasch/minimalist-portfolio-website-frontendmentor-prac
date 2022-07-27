@@ -22,7 +22,19 @@
 /* Tablet */
 @media (min-width: 650px) {
   .Footer {
-    padding: 24px 40px;
+    padding: 20px 40px;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+  }
+}
+
+/* Laptop */
+@media (min-width: 1275px) {
+  .Footer {
+    padding: 20px 110px;
 
     flex-direction: row;
     justify-content: space-between;
