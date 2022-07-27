@@ -7,7 +7,7 @@ import './ContactPage.css'
 const ContactPage = () => {
   return (
     <div className='ContactPage'>
-      <div className='portfolio-info portfolio-info--touch'>
+      <div className='portfolio__info portfolio__info--touch'>
         <h2 className='title title--lg'>Get In Touch</h2>
         <p className='text'>
           I’d love to hear about what you’re working on and how I could help. I’m

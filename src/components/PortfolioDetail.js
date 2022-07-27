@@ -51,6 +51,7 @@ const PortfolioDetail = () => {
           <h3 className='title title--md'>Project Background</h3>
           <p className='text'>{project.background}</p>
         </div>
+
         <div className='previews'>
           <h3 className='title title--md'>Static Previews</h3>
           <div className='previews__images'>
@@ -97,7 +98,7 @@ const PortfolioDetail = () => {
           </div>
         </Link>
         <Link className='other-projects__right' to={`/portfolio/${project.next}`}>
-          <ArrowRight />
+          <ArrowRight className='arrow-right-svg' />
           <div className='other-projects__copy'>
             <h3 className='title title--md'>{project.next}</h3>
             <p className='subtitle'>Next Project</p>

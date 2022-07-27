@@ -1,7 +1,7 @@
 .ContactPage {
 }
 
-.portfolio-info--touch {
+.portfolio__info.portfolio__info--touch {
   margin-top: 0;
 }
 
@@ -37,10 +37,32 @@
   margin-top: 8px;
 }
 
-.contact-me__form input::placeholder {
+.contact-me__form input::placeholder,
+.contact-me__form textarea::placeholder {
   color: var(--clr-grey-text);
+  font-family: var(--ff-main);
+  font-weight: var(--fw-medium);
 }
 
 .contact-me__form textarea {
   resize: none;
+}
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 650px) {
+  .ContactPage {
+    margin-top: 48px;
+  }
+
+  .contact-me {
+    gap: 32px;
+  }
+
+  .contact-me__form {
+    width: 100%;
+  }
 }
