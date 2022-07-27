@@ -46,7 +46,8 @@
   order: -1;
 }
 
-.hero__tablet-img {
+.hero__tablet-img,
+.hero__desktop-img {
   display: none;
 }
 
@@ -77,5 +78,26 @@
     margin-top: 0;
 
     padding: 56px 72px 0 0;
+  }
+}
+
+/* Laptop */
+@media (min-width: 1275px) {
+  .HomePage {
+    gap: 100px;
+  }
+
+  .hero__tablet-img {
+    display: none;
+  }
+
+  .hero__desktop-img {
+    display: block;
+  }
+
+  .hero__copy {
+    width: 42%;
+
+    padding: 56px 56px 0 0;
   }
 }

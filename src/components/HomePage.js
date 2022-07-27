@@ -9,6 +9,7 @@ import './HomePage.css'
 // Imported images and data
 import HeroMobileImg from '../assets/images/homepage/mobile/image-homepage-hero@2x.jpg'
 import HeroTabletImg from '../assets/images/homepage/tablet/image-homepage-hero@2x.jpg'
+import HeroDesktopImg from '../assets/images/homepage/desktop/image-homepage-hero@2x.jpg'
 import ProfileMobileImg from '../assets/images/homepage/mobile/image-homepage-profile@2x.jpg'
 import ProfileTabletImg from '../assets/images/homepage/tablet/image-homepage-profile@2x.jpg'
 import ProfileDesktopImg from '../assets/images/homepage/desktop/image-homepage-profile@2x.jpg'
@@ -41,6 +42,9 @@ const HomePage = () => {
         </div>
         <div className='hero__tablet-img'>
           <img src={HeroTabletImg} alt='computer monitor showing webiste' />
+        </div>
+        <div className='hero__desktop-img'>
+          <img src={HeroDesktopImg} alt='computer monitor showing webiste' />
         </div>
       </section>
 

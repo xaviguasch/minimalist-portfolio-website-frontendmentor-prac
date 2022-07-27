@@ -43,6 +43,7 @@
   --fs-36: 2.25rem;
   --fs-40: 2.5rem;
   --fs-48: 3rem;
+  --fs-50: 3.125em;
   --fs-56: 3.5rem;
   --fs-60: 3.75rem;
   --fs-64: 4rem;
@@ -227,5 +228,21 @@ textarea {
   .wrapper {
     padding: 64px 40px 96px;
     gap: 48px;
+  }
+}
+
+/* Laptop */
+@media (min-width: 1275px) {
+  /* UTILITY STYLES */
+  .wrapper {
+    padding: 42px 110px;
+    gap: 36px;
+  }
+
+  /* Typography */
+  .title--lg {
+    line-height: 1;
+    letter-spacing: -0.45px;
+    font-size: var(--fs-50);
   }
 }
