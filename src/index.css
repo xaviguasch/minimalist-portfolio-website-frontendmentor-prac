@@ -211,10 +211,6 @@ textarea {
   gap: 24px;
 }
 
-.portfolio-background {
-  margin-top: -24px;
-}
-
 .title-and-text {
   display: flex;
   flex-direction: column;

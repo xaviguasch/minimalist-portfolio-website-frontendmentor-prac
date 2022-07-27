@@ -18,11 +18,25 @@ const PortfolioDetail = () => {
 
   return (
     <div className='PortfolioDetail'>
-      <img src={project.images.mobile.hero} alt='' />
+      <img
+        className='PortfolioDetail__hero--mobile'
+        src={project.images.mobile.hero}
+        alt=''
+      />
+      <img
+        className='PortfolioDetail__hero--tablet'
+        src={project.images.tablet.hero}
+        alt=''
+      />
+      <img
+        className='PortfolioDetail__hero--desktop'
+        src={project.images.desktop.hero}
+        alt=''
+      />
 
-      <div className='portfolio-info'>
+      <div className='portfolio__info'>
         <h2 className='title title--lg'>{project.name}</h2>
-        <p>{project.description}</p>
+        <p className='text'>{project.description}</p>
         <div className='tag-area'>
           <p className='tags'>Interaction Design / Front End Development</p>
           <p className='tags'>HTML / CSS / JS</p>
@@ -40,8 +54,36 @@ const PortfolioDetail = () => {
         <div className='previews'>
           <h3 className='title title--md'>Static Previews</h3>
           <div className='previews__images'>
-            <img src={project.images.mobile.preview1} alt='' />
-            <img src={project.images.mobile.preview2} alt='' />
+            <img
+              className='preview__images__mobile'
+              src={project.images.mobile.preview1}
+              alt=''
+            />
+            <img
+              className='preview__images__tablet'
+              src={project.images.tablet.preview1}
+              alt=''
+            />
+            <img
+              className='preview__images__desktop'
+              src={project.images.desktop.preview1}
+              alt=''
+            />
+            <img
+              className='preview__images__mobile'
+              src={project.images.mobile.preview2}
+              alt=''
+            />
+            <img
+              className='preview__images__tablet'
+              src={project.images.tablet.preview2}
+              alt=''
+            />
+            <img
+              className='preview__images__desktop'
+              src={project.images.desktop.preview2}
+              alt=''
+            />
           </div>
         </div>
       </div>
