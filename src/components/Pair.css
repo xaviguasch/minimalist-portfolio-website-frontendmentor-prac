@@ -50,3 +50,26 @@
     flex: 6 1 0;
   }
 }
+
+/* Laptop */
+@media (min-width: 1275px) {
+  .Pair {
+    gap: 125px;
+  }
+  .pair__img-container {
+    flex: unset;
+    width: 50%;
+  }
+
+  .pair__img--tablet {
+    display: none;
+  }
+
+  .pair__img--desktop {
+    display: block;
+  }
+
+  .pair__copy {
+    flex: 0 1 345px;
+  }
+}

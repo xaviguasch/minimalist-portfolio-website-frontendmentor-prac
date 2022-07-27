@@ -101,6 +101,11 @@ ul {
   letter-spacing: -0.36px;
 }
 
+.title--xl {
+  font-size: var(--fs-40);
+  font-weight: var(--fw-bold);
+}
+
 .title--lg {
   font-size: var(--fs-40);
   font-weight: var(--fw-bold);
@@ -240,9 +245,9 @@ textarea {
   }
 
   /* Typography */
-  .title--lg {
+  .title--xl {
+    font-size: var(--fs-50);
     line-height: 1;
     letter-spacing: -0.45px;
-    font-size: var(--fs-50);
   }
 }

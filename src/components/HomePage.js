@@ -23,7 +23,7 @@ const HomePage = () => {
     <div className='HomePage'>
       <section className='hero'>
         <div className='hero__copy'>
-          <h1 className='title title--lg'>
+          <h1 className='title title--xl'>
             Hey, I'm Xavi Guasch and I love building beautiful websites
           </h1>
 
