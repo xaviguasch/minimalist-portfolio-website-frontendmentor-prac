@@ -53,3 +53,31 @@
     margin: 0;
   }
 }
+
+/* Laptop */
+@media (min-width: 1275px) {
+  .PortfolioPage--main {
+    margin-bottom: 100px;
+  }
+
+  .PortfolioPage--main .portfolio {
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 85px;
+  }
+
+  .portfolio__img--tablet {
+    display: none;
+  }
+  .portfolio__img--desktop {
+    display: block;
+  }
+
+  .portfolio .portfolio__info {
+    width: 30%;
+  }
+
+  .PortfolioPage--main .portfolio:nth-child(even) {
+    justify-content: flex-end;
+  }
+}
