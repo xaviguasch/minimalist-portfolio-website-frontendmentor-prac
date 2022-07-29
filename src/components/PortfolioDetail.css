@@ -6,6 +6,10 @@
   display: none;
 }
 
+.PortfolioDetail__grid .portfolio__info {
+  margin-top: unset;
+}
+
 .portfolio-background {
   margin-top: -24px;
 }
@@ -83,6 +87,9 @@
 
 /* Tablet */
 @media (min-width: 650px) {
+  .PortfolioDetail {
+    margin-top: 48px;
+  }
   .PortfolioDetail__hero--mobile {
     display: none;
   }
@@ -91,12 +98,29 @@
     display: block;
   }
 
-  .PortfolioDetail {
-    margin-top: 48px;
+  .PortfolioDetail__grid {
+    margin-top: 32px;
+
+    padding: 32px 0 0;
+
+    display: grid;
+
+    grid-template-areas:
+      'info info'
+      'background background'
+      'previews previews';
+
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 0;
+    grid-row-gap: 40px;
   }
 
-  .PortfolioDetail .portfolio__info {
+  .PortfolioDetail__grid .portfolio__info {
+    grid-area: info;
+
     padding: 32px 0;
+    margin-bottom: unset;
 
     display: grid;
 
@@ -107,24 +131,34 @@
 
     grid-template-rows: repeat(3, auto);
     grid-template-columns: 50% 50%;
+    grid-column-gap: 0;
+    grid-row-gap: 16px;
   }
 
-  .PortfolioDetail .portfolio__info .title {
+  .PortfolioDetail__grid .portfolio__info .title {
     grid-area: title;
   }
-  .PortfolioDetail .portfolio__info .text {
-    grid-area: description;
-  }
-  .PortfolioDetail .portfolio__info .tag-area {
+  .PortfolioDetail__grid .portfolio__info .tag-area {
     grid-area: tags;
   }
-  .PortfolioDetail .portfolio__info .btn {
+  .PortfolioDetail__grid .portfolio__info .btn {
     grid-area: button;
     justify-self: start;
   }
+  .PortfolioDetail__grid .portfolio__info .text {
+    grid-area: description;
+  }
 
-  .PortfolioDetail .other-projects {
-    margin: 80px 0;
+  .PortfolioDetail__grid .portfolio-background {
+    grid-area: background;
+
+    margin-top: unset;
+  }
+
+  .PortfolioDetail__grid .previews {
+    grid-area: previews;
+
+    margin-top: unset;
   }
 
   .preview__images__mobile {
@@ -136,6 +170,7 @@
   }
 
   .other-projects {
+    margin: 80px 0;
     padding: 32px 0;
   }
 
@@ -148,5 +183,30 @@
 
   .other-projects__right .other-projects__copy {
     order: -1;
+  }
+}
+
+/* Laptop */
+@media (min-width: 1275px) {
+  .PortfolioDetail__hero--tablet {
+    display: none;
+  }
+  .PortfolioDetail__hero--desktop {
+    display: block;
+  }
+
+  .PortfolioDetail .portfolio__info {
+    /* padding: 32px 0;
+
+    display: grid;
+
+    grid-template-areas:
+      'title description'
+      'tags description'
+      'button description';
+
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 0; */
   }
 }

@@ -34,22 +34,24 @@ const PortfolioDetail = () => {
         alt=''
       />
 
-      <div className='portfolio__info'>
-        <h2 className='title title--lg'>{project.name}</h2>
-        <p className='text'>{project.description}</p>
-        <div className='tag-area'>
-          <p className='tags'>Interaction Design / Front End Development</p>
-          <p className='tags'>HTML / CSS / JS</p>
+      <div className='PortfolioDetail__grid'>
+        <div className='portfolio__info'>
+          <h2 className='title title--lg'>{project.name}</h2>
+          <p className='text'>{project.description}</p>
+          <div className='tag-area'>
+            <p className='tags'>Interaction Design / Front End Development</p>
+            <p className='tags'>HTML / CSS / JS</p>
+          </div>
+          <Link to='#' className='btn btn--alt'>
+            Visit Website
+          </Link>
         </div>
-        <Link to='#' className='btn btn--alt'>
-          Visit Website
-        </Link>
-      </div>
 
-      <div className='portfolio-background'>
-        <div className='title-and-text'>
-          <h3 className='title title--md'>Project Background</h3>
-          <p className='text'>{project.background}</p>
+        <div className='portfolio-background'>
+          <div className='title-and-text'>
+            <h3 className='title title--md'>Project Background</h3>
+            <p className='text'>{project.background}</p>
+          </div>
         </div>
 
         <div className='previews'>
@@ -88,7 +90,6 @@ const PortfolioDetail = () => {
           </div>
         </div>
       </div>
-
       <div className='other-projects'>
         <Link className='other-projects__left' to={`/portfolio/${project.previous}`}>
           <ArrowLeft />
