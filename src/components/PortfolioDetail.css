@@ -99,9 +99,9 @@
   }
 
   .PortfolioDetail__grid {
-    margin-top: 32px;
+    margin-top: 40px;
 
-    padding: 32px 0 0;
+    padding: 0 0 0;
 
     display: grid;
 
@@ -195,18 +195,53 @@
     display: block;
   }
 
-  .PortfolioDetail .portfolio__info {
-    /* padding: 32px 0;
-
-    display: grid;
+  .PortfolioDetail__grid {
+    margin-top: 115px;
 
     grid-template-areas:
-      'title description'
-      'tags description'
-      'button description';
+      'info background'
+      'info previews'
+      '. previews';
 
     grid-template-rows: repeat(3, auto);
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 0; */
+    grid-template-columns: 30% 55%;
+    grid-column-gap: 15%;
+    grid-row-gap: 40px;
+  }
+
+  .PortfolioDetail__grid .portfolio__info {
+    padding: 48px 0;
+
+    grid-template-areas:
+      'title'
+      'description'
+      'tags'
+      'button';
+
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: auto;
+    grid-column-gap: 0;
+    grid-row-gap: 24px;
+
+    align-self: baseline;
+  }
+
+  .PortfolioDetail__grid .portfolio__info .tag-area {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .PortfolioDetail__grid .portfolio-background {
+    justify-self: end;
+  }
+
+  .PortfolioDetail__grid .portfolio-background .title-and-text {
+    gap: 28px;
+  }
+
+  .other-projects {
+    margin: 64px 0 115px;
+    padding: 32px 0;
   }
 }
