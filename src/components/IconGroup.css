@@ -1,5 +1,6 @@
 .icon-group_footer svg {
   color: var(--clr-white-text);
+  margin-bottom: -8px;
 }
 
 .icon-group_footer .icon-list {

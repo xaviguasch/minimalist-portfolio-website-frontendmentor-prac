@@ -15,6 +15,7 @@
 
 .Footer_link svg {
   color: var(--clr-white-text);
+  transform: translateY(10%);
 }
 
 /* ================== */

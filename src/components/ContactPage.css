@@ -95,6 +95,8 @@
   }
 
   .contact-me {
+    margin-top: -26px;
+
     display: grid;
 
     grid-template-areas: 'contact-title form';
