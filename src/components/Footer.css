@@ -2,13 +2,15 @@
   background: var(--clr-grayish-dark-blue-bg);
   color: var(--clr-white-text);
 
+  padding: 56px 0;
+}
+
+.Footer__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 40px;
-
-  padding: 56px 0;
 }
 
 .Footer_link svg {
@@ -23,7 +25,8 @@
 @media (min-width: 650px) {
   .Footer {
     padding: 20px 40px;
-
+  }
+  .Footer__container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -35,10 +38,24 @@
 @media (min-width: 1275px) {
   .Footer {
     padding: 20px 110px;
+  }
 
+  .Footer__container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 48px;
+  }
+}
+
+/* Wide monitor */
+@media (min-width: 1440px) {
+  .Footer {
+    padding: 20px 0;
+  }
+
+  .Footer__container {
+    margin: 0 auto;
+    max-width: 1440px;
   }
 }

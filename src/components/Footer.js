@@ -13,13 +13,15 @@ import './Footer.css'
 const Footer = () => {
   return (
     <div className='Footer'>
-      <Link to='/' className='Footer_link'>
-        <Logo />
-      </Link>
+      <div className='Footer__container'>
+        <Link to='/' className='Footer_link'>
+          <Logo />
+        </Link>
 
-      <Navbar position='nav_footer' />
+        <Navbar position='nav_footer' />
 
-      <IconGroup position='icon-group_footer' />
+        <IconGroup position='icon-group_footer' />
+      </div>
     </div>
   )
 }
