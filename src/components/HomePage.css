@@ -101,3 +101,10 @@
     padding: 56px 56px 0 0;
   }
 }
+
+/* Wide monitor */
+@media (min-width: 1440px) {
+  .HomePage {
+    gap: 150px;
+  }
+}

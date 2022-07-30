@@ -73,3 +73,10 @@
     flex: 0 1 345px;
   }
 }
+
+/* Wide monitor */
+@media (min-width: 1440px) {
+  .pair__copy {
+    padding: 50px 0 0;
+  }
+}

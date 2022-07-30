@@ -256,10 +256,10 @@ textarea {
 @media (min-width: 1440px) {
   /* UTILITY STYLES */
   .wrapper {
-    padding: 64px 165px 150px;
+    padding: 64px 0 150px;
     gap: 54px;
 
-    max-width: 1440px;
+    max-width: 1110px;
     margin: 0 auto;
   }
 }
