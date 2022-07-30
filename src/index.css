@@ -254,4 +254,12 @@ textarea {
 
 /* Wide monitor */
 @media (min-width: 1440px) {
+  /* UTILITY STYLES */
+  .wrapper {
+    padding: 64px 165px 150px;
+    gap: 54px;
+
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
