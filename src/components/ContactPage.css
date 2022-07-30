@@ -66,3 +66,40 @@
     width: 100%;
   }
 }
+
+/* Laptop */
+@media (min-width: 1275px) {
+  .portfolio__info.portfolio__info--touch {
+    padding: 48px 0;
+
+    display: grid;
+
+    grid-template-areas:
+      'touch-title touch-text'
+      '. touch-icons';
+
+    grid-template-rows: auto auto;
+    grid-template-columns: 45% 55%;
+    grid-column-gap: 0;
+    grid-row-gap: 24px;
+  }
+
+  .portfolio__info.portfolio__info--touch .title--lg {
+    grid-area: touch-title;
+  }
+  .portfolio__info.portfolio__info--touch .text {
+    grid-area: touch-text;
+  }
+  .portfolio__info.portfolio__info--touch .icon-group_contact {
+    grid-area: touch-icons;
+  }
+
+  .contact-me {
+    display: grid;
+
+    grid-template-areas: 'contact-title form';
+
+    grid-template-columns: 45% 55%;
+    grid-column-gap: 0;
+  }
+}

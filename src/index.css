@@ -251,3 +251,7 @@ textarea {
     letter-spacing: -0.45px;
   }
 }
+
+/* Wide monitor */
+@media (min-width: 1440px) {
+}
