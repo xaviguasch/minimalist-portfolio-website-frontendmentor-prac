@@ -4,16 +4,33 @@ import { Link } from 'react-router-dom'
 
 // Imported svgs
 import { ReactComponent as HamburgerSVG } from '../assets/icons/hamburger.svg'
+import { ReactComponent as CloseBtnSVG } from '../assets/icons/close.svg'
 
 import './Navbar.css'
 
-const Navbar = ({ position }) => {
+const Navbar = ({ position, onHandleNavOpen, mobileNavOpen }) => {
+  const handleNavBtnClick = () => {
+    onHandleNavOpen()
+  }
+
+  // Close the open nav modal on mobile after clicking a link
+  const handleNavOpenClick = () => {
+    onHandleNavOpen(false)
+  }
+
   return (
     <div className={position}>
       <div className='hamburger'>
-        <HamburgerSVG />
+        {mobileNavOpen ? (
+          <CloseBtnSVG onClick={handleNavBtnClick} />
+        ) : (
+          <HamburgerSVG onClick={handleNavBtnClick} />
+        )}
       </div>
-      <ul className='navigation-menu'>
+      <ul
+        className={`${mobileNavOpen ? 'navigation-open' : 'navigation-menu'}`}
+        onClick={handleNavOpenClick}
+      >
         <li>
           <Link className='link' to='/'>
             Home

@@ -1,15 +1,42 @@
 .nav_header {
+  position: relative;
 }
 
 .nav_header .navigation-menu {
   display: none;
 }
 
+.nav_header .navigation-open {
+  background: var(--clr-grayish-dark-blue-bg);
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  transform: translateY(60px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  padding: 28px 0;
+
+  width: 225px;
+
+  z-index: 10;
+}
+
+.nav_header .navigation-open {
+}
+
 .nav_footer .hamburger {
   display: none;
 }
 
-.nav_footer .link {
+.nav_footer .link,
+.nav_header .link {
   color: var(--clr-white-text);
 }
 
