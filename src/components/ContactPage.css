@@ -27,14 +27,37 @@
   width: 100%;
 }
 
-.contact-me__form input,
-.contact-me__form textarea {
+.contact-me__form .input,
+.contact-me__form .textarea {
   width: 100%;
   border: none;
   background: var(--clr-semi-dark-grey-bg);
   padding: 16px;
 
   margin-top: 8px;
+}
+.contact-me__form .input:focus,
+.contact-me__form .textarea:focus {
+  outline: 1px solid var(--clr-cyan-text);
+}
+
+.contact-me__form .input-error {
+  position: relative;
+
+  border: 1px solid var(--clr-error-red);
+}
+
+.contact-me__form .input-error::after {
+  content: 'This field is required';
+
+  color: var(--clr-error-red);
+  font-size: var(--fs-10);
+  font-weight: var(--fw-bold);
+  font-style: italic;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .contact-me__form input::placeholder,

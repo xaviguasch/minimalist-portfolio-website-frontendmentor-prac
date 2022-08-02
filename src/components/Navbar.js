@@ -29,7 +29,7 @@ const Navbar = ({ position, onHandleNavOpen, mobileNavOpen }) => {
       </div>
       <ul
         className={`${mobileNavOpen ? 'navigation-open' : 'navigation-menu'}`}
-        onClick={handleNavOpenClick}
+        onClick={mobileNavOpen ? handleNavOpenClick : ''}
       >
         <li>
           <Link className='link' to='/'>

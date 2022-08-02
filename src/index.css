@@ -56,6 +56,7 @@
   --clr-white-text: hsla(0, 0%, 100%, 1);
   --clr-cyan-text: hsl(168, 37%, 54%);
   --clr-grey-text: hsl(0, 0%, 59%);
+  --clr-error-red: hsl(0, 90%, 57%);
 
   /* Background  */
   --clr-very-light-grey-bg: hsla(0, 0%, 98%, 1);

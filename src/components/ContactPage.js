@@ -1,10 +1,32 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import IconGroup from './IconGroup'
 
 import './ContactPage.css'
 
 const ContactPage = () => {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [isNameEmpty, setIsNameEmpty] = useState(true)
+  const [isEmailEmpty, setIsEmailEmpty] = useState(true)
+  const [isMessageEmpty, setIsMessageEmpty] = useState(true)
+  const [isEmailValid, setIsEmailValid] = useState(true)
+
+  function emailValidator(email) {
+    return /\S+@\S+\.\S+/.test(email)
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+    name.length > 0 ? setIsNameEmpty(true) : setIsNameEmpty(false)
+    message.length > 0 ? setIsMessageEmpty(true) : setIsMessageEmpty(false)
+
+    emailValidator(email) ? setIsEmailValid(true) : setIsEmailValid(false)
+    email.length > 0 ? setIsEmailEmpty(true) : setIsEmailEmpty(false)
+  }
+
   return (
     <div className='ContactPage'>
       <div className='portfolio__info portfolio__info--touch'>
@@ -25,26 +47,47 @@ const ContactPage = () => {
       <div className='contact-me'>
         <h2 className='title title--lg'>Contact Me</h2>
 
-        <form className='contact-me__form' action=''>
+        <form onSubmit={handleSubmit} className='contact-me__form' action=''>
           <div className='input-group'>
             <label htmlFor='name'>Name</label>
-            <input type='text' name='name' placeholder='Jane Appleseed' />
+            <input
+              className={`input input__name ${isNameEmpty ? '' : 'input-error'}`}
+              type='text'
+              name='name'
+              placeholder='Jane Appleseed'
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </div>
           <div className='input-group'>
             <label htmlFor='email'>Email Address</label>
-            <input type='email' name='email' placeholder='email@example.com' />
+            <input
+              className={`input input__email ${isEmailEmpty ? '' : 'input-error'} ${
+                isEmailValid ? '' : 'email-error'
+              }`}
+              type='email'
+              name='email'
+              placeholder='email@example.com'
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </div>
           <div className='input-group'>
             <label htmlFor='message'>Message</label>
             <textarea
+              className={`textarea ${isMessageEmpty ? '' : 'input-error'}`}
               name='message'
               id=''
               placeholder='How can I help?'
               cols='30'
               rows='10'
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             ></textarea>
           </div>
-          <button className='btn btn--contact'>Send Message</button>
+          <button className='btn btn--contact' type='submit'>
+            Send Message
+          </button>
         </form>
       </div>
     </div>
