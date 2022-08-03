@@ -21,10 +21,14 @@
   justify-content: center;
   align-items: flex-start;
   gap: 24px;
+
+  width: 100%;
 }
 
 .contact-me__form .input-group {
   width: 100%;
+
+  position: relative;
 }
 
 .contact-me__form .input,
@@ -41,13 +45,15 @@
   outline: 1px solid var(--clr-cyan-text);
 }
 
-.contact-me__form .input-error {
-  position: relative;
-
-  border: 1px solid var(--clr-error-red);
+.contact-me__form .input-error .input__name,
+.contact-me__form .input-error .input__email,
+.contact-me__form .input-error .textarea {
+  outline: 1px solid var(--clr-error-red);
 }
 
-.contact-me__form .input-error::after {
+.contact-me__form .input-error.input-group__name::after,
+.contact-me__form .input-error.input-group__email::after,
+.contact-me__form .input-error.input-group__textarea::after {
   content: 'This field is required';
 
   color: var(--clr-error-red);
@@ -56,7 +62,7 @@
   font-style: italic;
 
   position: absolute;
-  bottom: 0;
+  bottom: -18px;
   left: 0;
 }
 

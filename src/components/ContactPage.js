@@ -48,10 +48,14 @@ const ContactPage = () => {
         <h2 className='title title--lg'>Contact Me</h2>
 
         <form onSubmit={handleSubmit} className='contact-me__form' action='' novalidate>
-          <div className='input-group'>
+          <div
+            className={`input-group input-group__name ${
+              isNameEmpty ? '' : 'input-error'
+            }`}
+          >
             <label htmlFor='name'>Name</label>
             <input
-              className={`input input__name ${isNameEmpty ? '' : 'input-error'}`}
+              className='input input__name'
               type='text'
               name='name'
               placeholder='Jane Appleseed'
@@ -59,12 +63,14 @@ const ContactPage = () => {
               onChange={(e) => setName(e.target.value)}
             />
           </div>
-          <div className='input-group'>
+          <div
+            className={`input-group input-group__email ${
+              isEmailEmpty ? '' : 'input-error'
+            }`}
+          >
             <label htmlFor='email'>Email Address</label>
             <input
-              className={`input input__email ${isEmailEmpty ? '' : 'input-error'} ${
-                isEmailValid ? '' : 'email-error'
-              }`}
+              className='input input__email'
               type='email'
               name='email'
               placeholder='email@example.com'
@@ -72,10 +78,14 @@ const ContactPage = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
-          <div className='input-group'>
+          <div
+            className={`input-group input-group__textarea ${
+              isMessageEmpty ? '' : 'input-error'
+            }`}
+          >
             <label htmlFor='message'>Message</label>
             <textarea
-              className={`textarea ${isMessageEmpty ? '' : 'input-error'}`}
+              className='textarea'
               name='message'
               id=''
               placeholder='How can I help?'
