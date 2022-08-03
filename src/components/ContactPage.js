@@ -47,7 +47,7 @@ const ContactPage = () => {
       <div className='contact-me'>
         <h2 className='title title--lg'>Contact Me</h2>
 
-        <form onSubmit={handleSubmit} className='contact-me__form' action=''>
+        <form onSubmit={handleSubmit} className='contact-me__form' action='' novalidate>
           <div className='input-group'>
             <label htmlFor='name'>Name</label>
             <input
