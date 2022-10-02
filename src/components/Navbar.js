@@ -10,7 +10,7 @@ import './Navbar.css'
 
 const Navbar = ({ position, onHandleNavOpen, mobileNavOpen }) => {
   const handleNavBtnClick = () => {
-    onHandleNavOpen()
+    onHandleNavOpen(true)
   }
 
   // Close the open nav modal on mobile after clicking a link
@@ -29,7 +29,7 @@ const Navbar = ({ position, onHandleNavOpen, mobileNavOpen }) => {
       </div>
       <ul
         className={`${mobileNavOpen ? 'navigation-open' : 'navigation-menu'}`}
-        onClick={mobileNavOpen ? handleNavOpenClick : ''}
+        onClick={mobileNavOpen ? handleNavOpenClick : null}
       >
         <li>
           <Link className='link' to='/'>

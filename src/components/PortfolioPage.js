@@ -43,8 +43,8 @@ const PortfolioPage = () => {
           })}
         </div>
       }
-
-      <Outlet />
+      {/* Possibly unnecessary Outlet, delete if so */}
+      {/* <Outlet /> */}
     </div>
   )
 }
