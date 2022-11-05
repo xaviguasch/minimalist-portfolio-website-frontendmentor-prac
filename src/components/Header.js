@@ -24,6 +24,11 @@ const Header = () => {
     if (windowWidth >= 650) {
       setMobileNavOpen(false)
     }
+
+    // Cleanup function:
+    return () => {
+      window.removeEventListener('resize', () => setWindowWidth(window.innerWidth))
+    }
   }, [windowWidth])
 
   return (
