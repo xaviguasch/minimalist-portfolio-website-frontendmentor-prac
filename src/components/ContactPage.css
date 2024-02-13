@@ -138,3 +138,10 @@
     grid-area: contact-title;
   }
 }
+
+/* Fix to floating footer in WS monitors */
+@media (min-height: 1300px) {
+  .ContactPage {
+    padding-bottom: 325px;
+  }
+}

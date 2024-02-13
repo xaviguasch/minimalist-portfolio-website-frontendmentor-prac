@@ -47,7 +47,7 @@ const ContactPage = () => {
       <div className='contact-me'>
         <h2 className='title title--lg'>Contact Me</h2>
 
-        <form onSubmit={handleSubmit} className='contact-me__form' action='' novalidate>
+        <form onSubmit={handleSubmit} className='contact-me__form' action='' noValidate>
           <div
             className={`input-group input-group__name ${
               isNameEmpty ? '' : 'input-error'
