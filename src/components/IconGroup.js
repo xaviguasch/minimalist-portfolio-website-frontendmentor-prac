@@ -18,7 +18,7 @@ const IconGroup = ({ position }) => {
         </li>
         <li>
           <a href='#'>
-            <TwitterSVG />
+            <TwitterSVG className='twitter-icon' />
           </a>
         </li>
         <li>
