@@ -13,6 +13,8 @@ import HeroDesktopImg from "../assets/images/homepage/desktop/image-homepage-her
 import ProfileMobileImg from "../assets/images/homepage/mobile/image-homepage-profile@2x.jpg";
 import ProfileTabletImg from "../assets/images/homepage/tablet/image-homepage-profile@2x.jpg";
 import ProfileDesktopImg from "../assets/images/homepage/desktop/image-homepage-profile@2x.jpg";
+
+import FullPortrait from "../assets/images/homepage/full-portrait.png";
 import aboutMeData from "../data/aboutMeData";
 
 // Imported svgs
@@ -24,7 +26,7 @@ const HomePage = () => {
       <section className="hero">
         <div className="hero__copy">
           <h1 className="title title--xl">
-            Hey, I'm Xavier Guasch and I love building beautiful websites
+            Hey, I'm Xavi Guasch and I love building beautiful websites
           </h1>
 
           <a href="#about-me" className="btn">
