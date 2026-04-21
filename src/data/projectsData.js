@@ -55,7 +55,7 @@ const projectsData = [
     background:
       "This project was completed as part of a front-end development challenge based on a detailed design and project brief. The specifications included both mobile and desktop layouts, requiring a responsive and consistent implementation across different screen sizes. Working on projects like this has helped me refine my development workflow, strengthen my problem-solving skills, and gain experience tackling real-world front-end challenges while continuously improving and adapting my approach.",
     previous: "Kubler Audio Shop",
-    next: "Insure",
+    next: "Scooter Multi-page Website",
     images: {
       mobile: {
         portfolio: moodPortfolio,
