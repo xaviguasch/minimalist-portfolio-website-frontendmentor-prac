@@ -13,6 +13,9 @@ import moodPreview1 from "../assets/images/mood-preview-1.png";
 import moodPreview2 from "../assets/images/mood-preview-2.png";
 
 import scooterPortfolio from "../assets/images/scooter-portfolio.png";
+import scooterHero from "../assets/images/scooter-hero.png";
+import scooterPreview1 from "../assets/images/scooter-preview-1.png";
+import scooterPreview2 from "../assets/images/scooter-preview-2.png";
 
 const projectsData = [
   {
@@ -87,21 +90,21 @@ const projectsData = [
     images: {
       mobile: {
         portfolio: scooterPortfolio,
-        hero: "/images/detail/mobile/image-insure-hero@2x.jpg",
+        hero: scooterHero,
         preview1: "/images/detail/mobile/image-insure-preview-1@2x.jpg",
         preview2: "/images/detail/mobile/image-insure-preview-2@2x.jpg",
       },
       tablet: {
         portfolio: scooterPortfolio,
-        hero: "/images/detail/tablet/image-insure-hero@2x.jpg",
-        preview1: "/images/detail/tablet/image-insure-preview-1@2x.jpg",
-        preview2: "/images/detail/tablet/image-insure-preview-2@2x.jpg",
+        hero: scooterHero,
+        preview1: scooterPreview1,
+        preview2: scooterPreview2,
       },
       desktop: {
         portfolio: scooterPortfolio,
-        hero: "/images/detail/desktop/image-insure-hero@2x.jpg",
-        preview1: "/images/detail/desktop/image-insure-preview-1@2x.jpg",
-        preview2: "/images/detail/desktop/image-insure-preview-2@2x.jpg",
+        hero: scooterHero,
+        preview1: scooterPreview1,
+        preview2: scooterPreview2,
       },
     },
     website:
